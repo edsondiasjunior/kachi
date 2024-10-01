@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Kachi</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main id="content">
+      <div class="title__container">
+        <h1 class="form__title">
+          Orientações à Equipe Multidisciplinar: Luspatercepte
+        </h1>
+      </div>
+
+      <form>
+        <div class="nome__containe">
+          <label for="nome">Nome</label>
+          <input type="text" name="paciente" id="paciente" required />
+        </div>
+
+        <div class="form__grupo">
+          <div class="campo">
+            <label for="data">Data de hoje</label>
+            <input type="date" name="data" id="data" required />
+          </div>
+
+          <div class="campo">
+            <label for="peso">Peso</label>
+            <input type="text" name="peso" id="peso" required />
+          </div>
+        </div>
+      </form>
+
+      <section class="info__uso">
+        <div class="info__title">
+          <h2>Informações sobre o uso</h2>
+        </div>
+        <div class="dose">
+          <p>Luspatercepte</p>
+          <p>Dose para ser administrada hoje: xxxxx</p>
+        </div>
+        <div class="info__content">
+          <p>
+            Administrar por injeção subcutânea (SC) na parte superior do braço,
+            coxa e/ou abdômen.
+          </p>
+          <p>
+            As doses que exigem volumes reconstituídos maioes (maiores que 1,2
+            mL) devem ser divididas em injeções de volume semelhante, separadas
+            e administradas em locais diferentes.
+          </p>
+        </div>
+        <div class="container">
+          <div class="row1">
+            <div>
+              <p>Reconstituição</p>
+            </div>
+            <div>
+              <p>Quantidade de água estéril*</p>
+            </div>
+            <div>
+              <p>Concentração pós restituição</p>
+            </div>
+          </div>
+
+          <div class="row2">
+            <div>
+              <p>Frasco-ampola de 25mg</p>
+            </div>
+            <div>
+              <p>R0,68 mL</p>
+            </div>
+            <div>
+              <p>50 mg / mL</p>
+            </div>
+          </div>
+
+          <div class="row3">
+            <div>
+              <p>Frasco-ampola de 75mg</p>
+            </div>
+            <div>
+              <p>1,6 mL</p>
+            </div>
+            <div>
+              <p>50 mg / mL</p>
+            </div>
+          </div>
+
+          <div class="row4">
+            <p>
+              *Reconstituir com água para injetáveis. Este mdicamento não deve
+              ser recontituídocom água bacteriostática ou qualquer outra
+              solução. Reconstitua o númeroapropriado de frascos de
+              luspatercepte para alcançar a dose desejada.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="resultado">
+        <p class="data__retorno">
+          Data sugerida* para retorno: (*em 3 semanas)
+        </p>
+        <p class="data__sugerida">
+          [data sugerida - 3 semanas após essa consulta]
+        </p>
+      </div>
+      <div>
+        <div class="obs">
+          <h3>Observação ao farmacêutico:</h3>
+          <div>
+            <h4>Para essa dose serão necessários:</h4>
+
+            <p>
+              [dose xx em mg + 25 mg = KK - arredondar pra cima] - KK frascos de
+              25mg
+            </p>
+          </div>
+          <div obs__p>
+            <p>
+              Para a próxima aplicação,
+              <strong
+                >lembre-se de deixar previsto o número de frascos necessários
+                para caso haja necessidade de aumento da dose,</strong
+              >
+              lembrando que a dose máxima é de 1,75 mg/kg.
+            </p>
+            <p>
+              Após um aumento da dose, essa dose não pode ser aumentada antes de
+              6 semanas.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <div class="title__container">
+          <h1 class="form__title">Acompanhamento do Paciente Luspatercepte</h1>
+        </div>
+
+        <form class="formDois">
+          <div class="form__grupo">
+            <div class="nome__containe">
+              <label for="nome">Nome</label>
+              <input type="text" name="paciente" id="paciente" required />
+            </div>
+            <div class="campo">
+              <label for="data">Data de hoje</label>
+              <input type="date" name="data" id="data" required />
+            </div>
+          </div>
+        </form>
+        <div class="tabela__container">
+          <p class="dados__consulta">Dados da consulta de hoje:</p>
+          <p class="observacao">Observações</p>
+          <p class="peso">Peso (kg):</p>
+          <p class="x1">xxxxx</p>
+          <p class="hemoglobina">Hemoglobina (g/dL):</p>
+          <p class="x2">xxxxx</p>
+          <p class="luspatercepte">Dose de luspatercepte:</p>
+          <div class="x3">
+            <p class="x3">xxxxx</p>
+
+            <p class="x4">xxxxx</p>
+          </div>
+          <div class="greydiv"></div>
+          <div class="grey50"></div>
+          <div class="checkbox">
+            <p>
+              Em relação à dose anterior de luspatercepte, a dose de hoje foi:
+            </p>
+            <fieldset>
+              <div>
+                <input type="checkbox" name="mantida" id="mantida" />
+                <label for="mantida">Mantida</label>
+              </div>
+              <div>
+                <input type="checkbox" name="reduzida" id="reduzida" />
+                <label for="reduzida">Reduzida</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="aumentada" id="aumentada" />
+                <label for="aumentada">Aumentada*</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="primeiraDose" id="primeiraDose" />
+                <label for="primeiraDose"
+                  >Hoje foi a primeira dose de luspatercepte*</label
+                >
+              </div>
+            </fieldset>
+            <p>
+              *se aumentada, na próxima consulta não poderá ser aumentada
+              novamente
+            </p>
+          </div>
+        </div>
+
+        <div class="data__container">
+          <div class="box__um">
+            <p>Data sugerida* para retorno: (*em 3 semanas)</p>
+            <p>[data sugerida - 3 semanas após essa consulta]</p>
+          </div>
+          <div class="box__dois">
+            <div class="agendaRetorno">
+              <label for="agendaRetorno "
+                >Anote a data agendada do retorno:</label
+              >
+              <input type="date" name="agendaRetorno " id="agendaRetorno " />
+            </div>
+            <div class="horarioRetorno">
+              <label for="time">Horário</label>
+              <input type="time" name="horarioRetorno" id="horarioRetorno" />
+            </div>
+            <p>Confirme na recepção/agendamento.</p>
+          </div>
+        </div>
+        <div class="notas">
+          <div class="recebimento">
+            <p>Anote aqui como você passou durante esse ciclo:</p>
+            <p>Se você recebeu transfuão de sangue, preencha aqui:</p>
+            <div class="recebimento__grupo">
+              <div class="datas_transfusao">
+                <label>Data de transfusão:</label>
+                <input
+                  type="text"
+                  name="dataTrasnfusaoUm"
+                  id="dataTrasnfusaoUm"
+                />
+                <input
+                  type="text"
+                  name="dataTrasnfusaoDois"
+                  id="dataTrasnfusaoDois"
+                />
+                <input
+                  type="text"
+                  name="dataTrasnfusaotres"
+                  id="dataTrasnfusaotres"
+                />
+              </div>
+              <div class="numero__bolsas">
+                <label>Número de bolsas:</label>
+                <input type="number" name="numeroBolsasUm" id="" />
+                <input
+                  type="number"
+                  name="numeroBolsasDois"
+                  id="numeroBolsasDois"
+                />
+                <input
+                  type="number"
+                  name="numeroBolsasTres"
+                  id="numeroBolsasTres"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <p>Em média, como você classificaria a fadiga/cansaço:</p>
+            <div class="semanas">
+              <p class="s1">Semana 1:</p>
+              <p class="s2">Semana 2:</p>
+              <p class="s3">Semana 3:</p>
+            </div>
+            <div class="check__media">
+              <fieldset>
+                <label for="ausente">Ausente</label>
+                <input type="radio" name="ausente" id="ausente" />
+                <input type="radio" name="ausente" id="ausente" />
+                <input type="radio" name="ausente" id="ausente" />
+              </fieldset>
+              <fieldset>
+                <label for="raramente">Raramente</label>
+                <input type="radio" name="raramente" id="raramente" />
+                <input type="radio" name="raramente" id="ausente" />
+                <input type="radio" name="raramente" id="raramente" />
+              </fieldset>
+              <fieldset>
+                <label for="pouco">Pouco</label>
+                <input type="radio" name="pouco" id="pouco" />
+                <input type="radio" name="pouco" id="pouco" />
+                <input type="radio" name="pouco" id="pouco" />
+              </fieldset>
+              <fieldset>
+                <label for="frequente">Frequente</label>
+                <input type="radio" name="frequente" id="frequente" />
+                <input type="radio" name="frequente" id="frequente" />
+                <input type="radio" name="frequente" id="frequente" />
+              </fieldset>
+              <fieldset>
+                <label for="m-frequente">Muito Frequente</label>
+                <input type="radio" name="m-frequente" id="m-frequente" />
+                <input type="radio" name="m-frequente" id="m-frequente" />
+                <input type="radio" name="m-frequente" id="m-frequente" />
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </section>
+      <button id="generate-pdf">
+        baixar pdf
+        <i class="ph ph-download-simple"></i>
+      </button>
+    </main>
+  </body>
+</html>
